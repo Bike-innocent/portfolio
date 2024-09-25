@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Apply to entire body */
+body {
+    @apply font-sans; /* Uses the custom DM Sans and Inter from Tailwind */
+  }
+  
