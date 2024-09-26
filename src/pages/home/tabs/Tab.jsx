@@ -102,7 +102,7 @@ function Tab() {
                     <div className="col-span-12 lg:col-span-5 2xl:col-span-4" data-aos="fade-up">
                         <div className="font-bold font-Syne leading-none flex flex-wrap flex-col gap-y-2 mb-4">
                             <span className="text-orange text-xl">Resume</span>
-                            <h3 className="text-black-800 text-4xl lg:text-5xl xl:text-[64px] tracking-[-1.5px] relative before:rounded-full before:bg-primary before:block before:absolute before:top-[2px] before:left-0 before:-z-[1] before:w-[36px] lg:before:w-[48px] xl:before:w-[64px] before:h-[36px] lg:before:h-[48px] xl:before:h-[64px]">
+                            <h3 className="text-black-800 text-4xl lg:text-5xl xl:text-[64px] tracking-[-1.5px] relative before:rounded-full  before:block before:absolute before:top-[2px] before:left-0 before:-z-[1] before:w-[36px] lg:before:w-[48px] xl:before:w-[64px] before:h-[36px] lg:before:h-[48px] xl:before:h-[64px]">
                                 All over my details find here...
                             </h3>
                         </div>
@@ -136,13 +136,13 @@ function Tab() {
                                 Skills
                                 <TabButton />
                             </button>
-                            <button
+                            {/* <button
                                 onClick={() => handleTabClick('awards_tab')}
                                 className={`tab-btn justify-between items-center inline-flex group ${activeTab === 'awards_tab' ? 'active' : ''}`}
                             >
                                 Awards
                                 <TabButton />
-                            </button>
+                            </button> */}
                         </div>
                     </div>
 
