@@ -19,10 +19,10 @@
   --color-black-700: rgba(8, 8, 8, 0.8);
   --color-black-600: rgba(8, 8, 8, 0.6);
   --color-black-500: rgba(8, 8, 8, 0.04);
-  --color-primary: #4662ff;
-  --color-secondary: #d9dfff;
-  --color-white: #ffffff;
-  --color-orange: #308aff;
+  --color-primary: #60A5FA;    /* Lighter blue, analogous to #FFB646 */
+  --color-secondary: #E0F2FE;  /* Softer blue, analogous to #FFE9D9 */
+  --color-white: #FFFFFF;      /* Neutral white, same as original */
+  --color-orange: #3B82F6;       /* Rich idea blue, analogous to #FF9330 */
   --color-gray-300: #d1d5db;
   --color-success: #05EB05;
   --color-error: #DC2626;
@@ -44,8 +44,12 @@
     border-color: rgba(var(--color-black-800), 0.4);
 }
 
-.border-border-white {
+/* .border-border-white {
     border-color: rgba(var(--color-white), 0.2);
+} */
+
+.border-border-white {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .border-gray-300 {

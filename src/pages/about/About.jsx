@@ -3,7 +3,7 @@ import Hero from './mini-component/Hero'
 import Exeperience from './mini-component/Exeperience'
 import Video from './mini-component/Video'
 import Tab from './mini-component/tabs/Tab'
-import Testimonial from './mini-component/Testimonial'
+// import Testimonial from './mini-component/Testimonial'
 
 function About() {
     return (
@@ -12,7 +12,7 @@ function About() {
             <Exeperience />
             <Video/>
             <Tab/>
-           <Testimonial/>
+           {/* <Testimonial/> */}
           
 
         </>

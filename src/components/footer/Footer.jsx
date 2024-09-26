@@ -76,12 +76,12 @@ function Footer() {
 
                         <div class="grid grid-cols-1 gap-6">
                             <div class="py-[72px] text-center">
-                                <h1 class="text-5xl md:text-6xl lg:text-8xl  font-bold text-[#FFE9D9]">Innotech</h1>
+                                {/* <h1 class="text-5xl md:text-6xl lg:text-8xl  font-bold text-[#FFE9D9]">Innotech</h1> */}
                             </div>
                         </div>
 
 
-                        <div class="border-t  border-gray-500 pt-6 ">
+                        <div class="border-t  border-gray-500 pt-6 py-[72px] ">
                             <div class="grid grid-cols-12">
 
                                 <div class="col-span-12 sm:col-span-8 order-last sm:order-first">

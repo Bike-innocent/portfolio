@@ -2,6 +2,7 @@
 import React from 'react';
 import Arrow from './mini-component/Arrow';
 import Nav from './mini-component/Nav';
+import Icons from './mini-component/Icons';
 
 function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle function as props
   return (
@@ -14,7 +15,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle fu
       >
         {/* Close button */}
         <div>
-          <div className="flex flex-wrap justify-between items-center border-b border-border-white mb-[80px]">
+          <div className="flex flex-wrap justify-between items-center border-b border-border-white mb-[50px]">
             <a href="index">
               <img src="assets/images/logo/offcanvas-logo.png" alt="" />
             </a>
@@ -45,7 +46,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle fu
           <nav className="offcanvas-menu mr-[40px] flex flex-col">
             <ul>
              
-               <li class="border-b border-border-white py-4 group">
+               <li class="border-b border-border-white pb-4 group">
                 <a href="/" class="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"> Home
                   <Arrow/>
                 </a>
@@ -85,7 +86,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle fu
           </nav>
         </div>
 
-        <Nav />
+        <Icons/>
       </div>
     </div>
   );

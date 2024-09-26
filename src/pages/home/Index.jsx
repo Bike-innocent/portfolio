@@ -5,7 +5,7 @@ import About from './about/About'
 import Tab from './tabs/Tab'
 import Portfolio from './portfolio/Portfolio'
 import Blog from './blog/Blog'
-import Testimonial from './testimonial/Testimonial'
+// import Testimonial from './testimonial/Testimonial'
 // import Pricing from './pricing/Pricing'
 
 function Index() {
@@ -16,7 +16,7 @@ function Index() {
       <About/>
       <Tab/>
       <Portfolio/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <Blog/>
       {/* <Pricing/> */}
     </>
