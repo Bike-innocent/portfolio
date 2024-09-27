@@ -6,11 +6,14 @@ function Header({ toggleOffCanvas }) { // Accept toggle function as prop
       <header id="sticky-header" className="xl:pl-12 absolute left-0 top-0 w-full z-10">
         <div className="flex pl-4 xl:pl-0">
           <div className="flex-1 flex items-center justify-between border-b border-black-800 border-opacity-40">
-            <a href="index.html">
-              <img src="assets/images/logo/logo.png" alt="logo" />
+            <div className='text-3xl font-bold'>
+            <a href="/">
+             Chibuike
             </a>
+            </div>
+            
             <a
-              href="contact.html"
+              href="contact"
               className="flex items-center flex-wrap py-[6px] px-3 text-[15px] font-bold text-active leading-none mr-2 transition-all duration-300 hover:text-orange md:hover:text-white group"
             >
               Let’s Talk

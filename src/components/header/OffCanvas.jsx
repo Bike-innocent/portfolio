@@ -16,9 +16,11 @@ function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle fu
         {/* Close button */}
         <div>
           <div className="flex flex-wrap justify-between items-center border-b border-border-white mb-[50px]">
-            <a href="index">
-              <img src="assets/images/logo/offcanvas-logo.png" alt="" />
+          <div className='text-3xl text-white font-bold'>
+            <a href="/">
+             Chibuike
             </a>
+            </div>
             <button
               id="offcanvas-close"
               className="offcanvas-close bg-primary py-7 px-[38px]"
