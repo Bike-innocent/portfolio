@@ -19,51 +19,46 @@ function AboutTab() {
 
                     <ul className="flex-col gap-3 inline-flex">
                         <li className="gap-10 inline-flex items-center">
-                            <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
+                            <span className="w-[110px] text-black-text-800 text-lg  font-normal leading-none">
                                 Name</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800 text-xl md:text-2xl font-bold font-Syne leading-8">
                                 Chibuike Innocent</span>
                         </li>
                         <li className="gap-10 inline-flex items-center">
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
                                 Nationality</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
                                 Nigeria</span>
                         </li>
                         <li className="gap-10 inline-flex items-center">
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
                                 Phone</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
                                 +234 808 887 9523</span>
                         </li>
                         <li className="gap-10 inline-flex items-center">
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
                                 Email</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
                                 hello@buike.com.ng</span>
                         </li>
                         <li className="gap-10 inline-flex items-center">
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
                                 Experience</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
                                 3+ years</span>
                         </li>
                         <li className="gap-10 inline-flex items-center">
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
                                 Freelance</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
                                 Available</span>
                         </li>
-                        {/* <li className="gap-10 inline-flex items-center">
-                            <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
-                                Skype</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
-                                henry.halk23</span>
-                        </li> */}
+                     
                         <li className="gap-10 inline-flex items-center">
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
                                 Language</span>
-                            <span className="text-black-800 text-2xl font-bold font-Syne leading-8">
+                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
                                 English</span>
                         </li>
                     </ul>
