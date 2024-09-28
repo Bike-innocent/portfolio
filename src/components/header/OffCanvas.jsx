@@ -1,8 +1,9 @@
 
 import React from 'react';
 import Arrow from './mini-component/Arrow';
-import Nav from './mini-component/Nav';
+
 import Icons from './mini-component/Icons';
+import AuthNav from './mini-component/AuthNav';
 
 function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle function as props
   return (
@@ -45,7 +46,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle fu
           </div>
 
           {/* Offcanvas menu */}
-          <nav className="offcanvas-menu mr-[40px] flex flex-col">
+          <nav className="offcanvas-menu overflow-auto mr-[40px] flex flex-col">
             <ul>
              
                <li class="border-b border-border-white pb-4 group">
@@ -63,27 +64,29 @@ function OffCanvas({ isOpen, toggleOffCanvas }) { // Accept isOpen and toggle fu
                   <Arrow/>
                 </a>
               </li>
-              <li class="border-b border-border-white py-4 group">
+              {/* <li class="border-b border-border-white py-4 group">
                 <a href="project-details" class="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">Project details
                   <Arrow/>
                 </a>
-              </li>
+              </li> */}
               <li class="border-b border-border-white py-4 group">
                 <a href="blog" class="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">Blog
                   <Arrow/>
                 </a>
               </li>
-              <li class="border-b border-border-white py-4 group">
+              {/* <li class="border-b border-border-white py-4 group">
                 <a href="blog-details" class="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">Blog Details
                   <Arrow/>
                 </a>
-              </li>
+              </li> */}
 
               <li class="border-b border-border-white py-4 group">
                 <a href="contact" class="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">Contact
                   <Arrow/>
                 </a>
               </li>
+              <AuthNav/>
+
             </ul>
           </nav>
         </div>
