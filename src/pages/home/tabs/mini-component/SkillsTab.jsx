@@ -29,7 +29,7 @@ function SkillsTab() {
 
                     </div>
                     <div className="flex ">
-                        <h4 className="font-bold font-Syne leading-normal text-xl text-black-800 mt-2">Tailwind, Bootstrap</h4>
+                        <h4 className="font-bold font-Syne leading-normal text-xl text-black-800 mt-2">Bootstrap,Tailwind</h4>
 
                     </div>
                 </div>

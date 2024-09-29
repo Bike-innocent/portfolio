@@ -16,7 +16,7 @@ function Login() {
 
   const validateAuthToken = async (token) => {
     try {
-      const response = await axiosInstance.get('/profile/user', {
+      const response = await axiosInstance.get('/user', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
