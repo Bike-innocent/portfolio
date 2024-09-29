@@ -11,6 +11,7 @@ import Blog from './pages/blog/Blog.jsx';
 import BlogDetails from './pages/blog-details/BlogDetails.jsx';
 import Login from './pages/Login.jsx';
 import NotFound from './pages/NotFound.jsx';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // Define the router
 const router = createBrowserRouter([
@@ -34,10 +35,13 @@ const router = createBrowserRouter([
  
 ]);
 
+const queryClient = new QueryClient();
+
 function App() {
     return (
-       
+      <QueryClientProvider client={queryClient}>
             <RouterProvider router={router} />
+            </QueryClientProvider>
         
     );
 }
