@@ -15,7 +15,7 @@ function Exeperience() {
                             only reflects who you are and what you stand for, but words that truly land with those that
                             read them, calling your audience in and making them want more.
                         </p>
-                        <ul class="flex flex-wrap gap-9 2xl:gap-[40px]">
+                        {/* <ul class="flex flex-wrap gap-9 2xl:gap-[40px]">
                             <li>
 
                                 <span
@@ -34,7 +34,7 @@ function Exeperience() {
                                     class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">3.5k</span>
                                 <p class="paragraph">Job done successfully</p>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
 
                     <div class="flex flex-col justify-end">

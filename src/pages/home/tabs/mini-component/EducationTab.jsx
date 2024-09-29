@@ -13,7 +13,7 @@ function EducationTab() {
                     <div className="flex flex-col -mt-2 "> {/* Use flex-col to stack items vertically */}
                         <div className='flex'>
                             <p className="text-lg font-normal font-sans leading-7 text-black-800 relative z-[1] before:rounded-full before:bg-orange before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:-z-[1] before:w-[8px] before:h-[8px] pl-4"></p>
-                            <h4 className="font-bold font-Syne leading-normal text-lg sm:text-xl md:text-2xl text-black-800">Ceresense Institution.</h4>
+                            <h4 className="font-bold font-Syne leading-normal text-lg sm:text-xl md:text-2xl text-black-800">Ceresense ICT, Ilorin.</h4>
                         </div>
                         <p className="text-sm block font-normal font-Inter leading-tight text-black-text-800 mt-2">
                             10/2022 – 05/2023

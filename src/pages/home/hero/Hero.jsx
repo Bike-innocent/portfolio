@@ -16,8 +16,8 @@ function Hero() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting && !el.classList.contains('is-visible')) {
                         counterUp(el, {
-                            duration: 3000,
-                            delay: 15,
+                            duration: 2000,
+                            delay: 10,
                         });
                         el.classList.add('is-visible');
                     }

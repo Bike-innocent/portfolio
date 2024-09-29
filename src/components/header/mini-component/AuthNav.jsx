@@ -77,19 +77,19 @@ function AuthNav() {
         <ul>
             {isAdmin && (
                 <>
-                    <li className="border-b border-border-white py-3 group">
+                    <li className="border-b border-border-white py-4 group">
                         <a href="create-project" className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">
                             Add Project
                             <Arrow />
                         </a>
                     </li>
-                    <li className="border-b border-border-white py-3 group">
+                    <li className="border-b border-border-white py-4 group">
                         <a href="create-blog" className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">
                             Add Blog
                             <Arrow />
                         </a>
                     </li>
-                    <li className="border-b border-border-white py-3 group">
+                    <li className="border-b border-border-white py-4 group">
                         <button 
                             onClick={handleLogout} 
                             className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
