@@ -1,7 +1,6 @@
 import React from 'react';
 import axiosInstance from '../../axiosInstance'; // Adjust the path if necessary
 import Arrow1 from './mini-component/Arrow1';
-// import Arrow2 from './mini-component/Arrow2';
 import VeiwAllProject from './mini-component/VeiwAllProject';
 import { useQuery } from '@tanstack/react-query'; // Import useQuery
 import SkeletonComponent from './mini-component/SkeletonComponent';
@@ -13,10 +12,10 @@ const fetchProjects = async () => {
   return response.data;
 };
 
-function Porject() {
+function Project() {
   // Use the useQuery hook with object form
   const { data: projects = [], isLoading, error } = useQuery({
-    queryKey: ['projects2'],
+    queryKey: ['projectsh'],
     queryFn: fetchProjects,
   });
 
@@ -46,7 +45,7 @@ function Porject() {
             {/* Show loading skeletons if data is being fetched */}
             {isLoading ? (
               <>
-                {[1, 2,3,4,5,6].map((_, index) => (
+                {[1, 2].map((_, index) => (
                   <div className="col-span-12 md:col-span-6" key={index}>
                     <SkeletonComponent />
                   </div>
@@ -65,7 +64,7 @@ function Porject() {
                     <img
                       src={project.image}
                       alt={`project-${project.id}`}
-                      className="mb-6 rounded-[20px] object-cover w-full max-h-[280px] sm:max-h-[320px] md:max-h-[300px] lg:max-h-[350px]"/>
+                      className="mb-6 rounded-[20px] object-cover w-full max-h-[280px] sm:max-h-[320px] md:max-h-[300px] lg:max-h-[350px]" />
                   </div>
                   <div className="flex flex-wrap flex-col gap-3">
                     <div className="flex flex-wrap gap-2">
@@ -78,13 +77,14 @@ function Porject() {
                       </a>
                       <a
                         className="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white"
-                        href={`/project/${project.id}`}>
+                        href={`/project/${project.slug}`}>
                         DESCRIPTION
                       </a>
+
                       <div className='ml-auto'>
-                      <ProjectDropdown project={project} /> 
+                        <ProjectDropdown project={project} />
                       </div>
-                      
+
                     </div>
                     <div className="flex flex-wrap items-center justify-between text-black-800 hover:text-orange group">
                       <h4 className="font-bold font-Syne text-center leading-10 text-[20px] lg:text-[24px] xl:text-[32px] capitalize">
@@ -109,4 +109,4 @@ function Porject() {
   );
 }
 
-export default Porject;
+export default Project;

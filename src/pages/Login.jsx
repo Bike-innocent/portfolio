@@ -54,7 +54,7 @@ function Login() {
       setErrors({});
       setGeneralError('');
 
-      const response = await axiosInstance.post('/login', { email, password });
+      const response = await axiosInstance.post('/mylogin', { email, password });
       
       localStorage.setItem('authToken', response.data.access_token);
 

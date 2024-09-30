@@ -9,7 +9,7 @@ import "./index.css";
 import 'aos/dist/aos.css';
 
 // import './swiper/swiper-bundle.min.css';
-import './style.css';
+ import './style.css';
  import './color.css';
 import './plugins/swiper-bundle.min.css';
 import './plugins/magnific-popup.css';

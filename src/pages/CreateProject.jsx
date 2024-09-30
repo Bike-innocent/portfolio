@@ -197,7 +197,7 @@ function CreateProject() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full p-3 text-white bg-orange hover:bg-indigo-700 rounded-lg font-medium"
+              className="w-full p-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg font-medium"
             >
               {loading ? 'Creating...' : 'Create Project'}
             </button>

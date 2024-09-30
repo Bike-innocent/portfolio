@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
-import axiosInstance from '../../../axiosInstance'; 
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import axiosInstance from '../../../axiosInstance';
 import Arrow from './Arrow';
 
 function AuthNav() {
     const [isAdmin, setIsAdmin] = useState(false);
     const [loading, setLoading] = useState(true);
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     // Function to fetch user info based on token
     const fetchUser = async () => {
         try {
             const response = await axiosInstance.get('/user'); // Token is handled by axiosInstance
             const user = response.data;
-            
+
             // Check if user has admin role
             const adminRole = user.roles.some(role => role.name === 'admin');
             setIsAdmin(adminRole);
@@ -78,24 +79,34 @@ function AuthNav() {
             {isAdmin && (
                 <>
                     <li className="border-b border-border-white py-4 group">
-                        <a href="create-project" className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">
-                            Add Project
+                      
+                        <Link
+                            to="/create-project"
+                        
+                            className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
+                        >
+                           Add Project
                             <Arrow />
-                        </a>
+                        </Link>
                     </li>
                     <li className="border-b border-border-white py-4 group">
-                        <a href="create-blog" className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300">
-                            Add Blog
+                        
+                        <Link
+                            to="/create-blog"
+                        
+                            className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
+                        >
+                             Add Blog
                             <Arrow />
-                        </a>
+                        </Link>
                     </li>
                     <li className="border-b border-border-white py-4 group">
-                        <button 
-                            onClick={handleLogout} 
+                        <button
+                            onClick={handleLogout}
                             className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
                         >
                             Logout
-                           
+
                         </button>
                     </li>
                 </>
