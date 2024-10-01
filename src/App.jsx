@@ -13,6 +13,8 @@ import Login from './pages/Login.jsx';
 import NotFound from './pages/NotFound.jsx';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import CreateProject from './pages/CreateProject.jsx';
+import EditProject from './pages/EditProject.jsx';
+
 
 // Define the router
 const router = createBrowserRouter([
@@ -28,7 +30,9 @@ const router = createBrowserRouter([
       { path: '/about', element: < About/> },
       { path: '/blog', element: < Blog/> },
       { path: '/projects', element: < Project/> },
-      { path: '/create-project', element: < CreateProject/> },
+      { path: '/create-project', element:  < CreateProject/>  },
+      { path: '/project/edit/:slug', element: < EditProject/> },
+
       { path: '/project/:slug', element: < ProjectDetails/> },
       { path: '/blog-details', element: < BlogDetails/> },
     

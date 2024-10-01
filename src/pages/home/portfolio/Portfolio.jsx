@@ -63,7 +63,7 @@ function Portfolio() {
                   <div className="w-full">
                     <img
                       src={project.image}
-                      alt={`project-${project.id}`}
+                      alt={`project-${project.name}`}
                       className="mb-6 rounded-[20px] object-cover w-full max-h-[280px] sm:max-h-[320px] md:max-h-[300px] lg:max-h-[350px]" />
                   </div>
                   <div className="flex flex-wrap flex-col gap-3">
@@ -88,11 +88,11 @@ function Portfolio() {
                     </div>
                     <div className="flex flex-wrap items-center justify-between text-black-800 hover:text-orange group">
                       <h4 className="font-bold font-Syne text-center leading-10 text-[20px] lg:text-[24px] xl:text-[32px] capitalize">
-                        <a className="transition-all" href={`/project/${project.id}`}>
+                        <a className="transition-all" href={`/project/${project.slug}`}>
                           {project.name}
                         </a>
                       </h4>
-                      <a className="group-hover:animate-arrow-move-up" href={`/project/${project.id}`}>
+                      <a className="group-hover:animate-arrow-move-up" href={`/project/${project.slug}`}>
                         <Arrow1 />
                       </a>
                     </div>

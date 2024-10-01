@@ -28,24 +28,9 @@ function ProjectDetails() {
 
   if (loading) {
     return (
-      <div className="max-w-[1075px] mx-auto px-4 xl:px-0 ">
-        {/* Skeleton for title and metadata */}
-        <Skeleton className="mb-4 h-12 w-3/4" /> {/* Title */}
-        <Skeleton className="mb-2 h-4 w-1/3" /> {/* Category */}
-        <Skeleton className="mb-2 h-4 w-1/4" /> {/* Start Date */}
-        
-        {/* Skeleton for project details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 pb-12">
-          <div>
-            <Skeleton className="h-10 w-full" /> {/* Project Name */}
-            <Skeleton className="mt-2 h-6 w-1/2" /> {/* Client */}
-            <Skeleton className="mt-2 h-6 w-1/2" /> {/* Category */}
-            <Skeleton className="mt-2 h-6 w-1/2" /> {/* Tools */}
-          </div>
-        </div>
-
-        {/* Skeleton for image */}
-        <Skeleton className="h-[300px] md:h-[400px] lg:h-[500px] w-full rounded-[20px]" />
+      <div >
+       
+         loading...
       </div>
     );
   }
