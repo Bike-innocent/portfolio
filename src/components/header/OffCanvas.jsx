@@ -17,7 +17,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) {
       >
         {/* Close button */}
         <div>
-          <div className="flex flex-wrap justify-between items-center border-b border-border-white mb-[50px]">
+          <div className="flex  flex-wrap justify-between items-center border-b border-border-white mb-[50px]">
             <div className='text-3xl text-white font-bold'>
               <Link to="/"> {/* Use Link instead of a */}
                 Chibuike
@@ -47,7 +47,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) {
           </div>
 
           {/* Offcanvas menu */}
-          <nav className="offcanvas-menu overflow-auto mr-[40px] flex flex-col">
+          <nav className="offcanvas-menu  mr-[40px] flex flex-col">
             <ul>
               <li className="border-b border-border-white pb-4 group">
                 <Link

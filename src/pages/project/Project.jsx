@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axiosInstance from '../../axiosInstance'; // Adjust the path if necessary
 import Arrow1 from './mini-component/Arrow1';
 import { useQuery } from '@tanstack/react-query'; // Import useQuery
@@ -13,6 +13,9 @@ const fetchProjects = async () => {
 };
 
 function Project() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
     // Use the useQuery hook with object form
     const { data: projects = [], isLoading, error } = useQuery({
         queryKey: ['projectsh'],
