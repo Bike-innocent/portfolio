@@ -81,11 +81,11 @@ function OffCanvas({ isOpen, toggleOffCanvas }) {
               </li>
               <li className="border-b border-border-white py-4 group">
                 <Link
-                  to="/blog"
+                  to="/blogs"
                   onClick={toggleOffCanvas}
                   className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
                 >
-                  Blog
+                  Blogs
                   <Arrow />
                 </Link>
               </li>

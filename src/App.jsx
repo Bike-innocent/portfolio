@@ -14,6 +14,8 @@ import NotFound from './pages/NotFound.jsx';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import CreateProject from './pages/CreateProject.jsx';
 import EditProject from './pages/EditProject.jsx';
+import EditBlog from './pages/EditBlog.jsx';
+import CreateBlog from './pages/CreateBlog.jsx';
 
 
 // Define the router
@@ -28,13 +30,16 @@ const router = createBrowserRouter([
       { path: '/not-found', element: <NotFound /> },
       { path: '*', element: <NotFound /> },
       { path: '/about', element: < About/> },
-      { path: '/blog', element: < Blog/> },
+      { path: '/blogs', element: < Blog/> },
       { path: '/projects', element: < Project/> },
       { path: '/create-project', element:  < CreateProject/>  },
       { path: '/project/edit/:slug', element: < EditProject/> },
+      { path: '/create-blog', element:  < CreateBlog/>  },
+      { path: '/blog/edit/:slug', element: < EditBlog/> },
 
       { path: '/project/:slug', element: < ProjectDetails/> },
-      { path: '/blog-details', element: < BlogDetails/> },
+       { path: '/blog/:slug', element: < BlogDetails/> },
+      
     
     ],
   },

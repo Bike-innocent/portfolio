@@ -5,8 +5,8 @@ import VeiwAllProject from './mini-component/VeiwAllProject';
 import { useQuery } from '@tanstack/react-query'; // Import useQuery
 import ProjectDropdown from './mini-component/ProjectDropdown';
 import { Link } from 'react-router-dom';
-import Loader from '../../../components/Loader';
-import InlineLoader from '../../../components/InlineLoader';
+// import Loader from '../../../components/Loader';
+// import InlineLoader from '../../../components/InlineLoader';
 
 // Function to fetch projects
 const fetchProjects = async () => {
