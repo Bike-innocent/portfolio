@@ -1,6 +1,6 @@
 import React from 'react'
 import Icons from './mini-component/Icons'
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,13 +29,13 @@ function Footer() {
                                 <h3 class="text-xl font-bold font-Syne text-white">Looking for a hectic designer?</h3>
                                 <div class="flex justify-between items-center">
                                     <p class="text-2xl font-bold font-Syne leading-none text-orange ">hello@buike.com.ng</p>
-                                    <a href="#" class="text-white group-hover:animate-arrow-move-up group-hover:text-orange">
+                                  <Link to="#" class="text-white group-hover:animate-arrow-move-up group-hover:text-orange">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.6667 28.3334L28.3334 11.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M11.6667 11.6667H28.3334V28.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
 
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -43,13 +43,13 @@ function Footer() {
                                 <h3 class="text-xl font-bold font-Syne text-white">Want a more in-depth look at my history?</h3>
                                 <div class="flex justify-between items-center">
                                     <p class="text-2xl font-bold font-Syne leading-none text-orange">+234 808 887 9523 </p>
-                                    <a href="#" class="text-white group-hover:animate-arrow-move-up group-hover:text-orange">
+                                  <Link to="#" class="text-white group-hover:animate-arrow-move-up group-hover:text-orange">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.6667 28.3334L28.3334 11.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M11.6667 11.6667H28.3334V28.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
 
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -73,7 +73,7 @@ function Footer() {
                                 </div>
                                 <div class="col-span-12 sm:col-span-4 order-first sm:order-last">
                                     <div class="flex justify-end mb-2 sm:mb-0">
-                                        <a id="scrollUp" class="flex flex-wrap items-center gap-2 group" href="#" aria-label="scroll up">
+                                      <Link id="scrollUp" class="flex flex-wrap items-center gap-2 group" href="#" aria-label="scroll up">
                                             <span
                                                 class="text-white text-lg font-normal font-sans leading-7 transition-all group-hover:text-orange">Back
                                                 to
@@ -83,7 +83,7 @@ function Footer() {
                                                 <path d="M19 12L12 5L5 12" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
 
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

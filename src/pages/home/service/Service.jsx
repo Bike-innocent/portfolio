@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon from './mini-component/Icon'
+import { Link } from 'react-router-dom'
 
 
 function Service() {
@@ -40,12 +41,12 @@ function Service() {
 
                                 {/*   {/* Icon End --> */}
                                 <h4>
-                                    <a href="projects.html" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
+                                    <Link to="projects" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
                                         
                                         Full-Stack Web<br />  Development
 
                                         <Icon/>
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
 
@@ -65,12 +66,12 @@ function Service() {
 
                                 {/*   {/* Icon End --> */}
                                 <h4>
-                                    <a href="projects.html" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
+                                    <Link to="projects" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
                                        
                                         API Development <br /> & Integration
 
                                         <Icon/>
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
 
@@ -88,13 +89,13 @@ function Service() {
 
                                 {/*   {/* Icon End --> */}
                                 <h4>
-                                    <a href="projects.html" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
+                                    <Link to="projects" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
                                      
                                       
                                         Responsive &<br /> Modern UI Design
 
                                         <Icon/>
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
 
@@ -110,12 +111,12 @@ function Service() {
 
                                 {/*   {/* Icon End --> */}
                                 <h4>
-                                    <a href="projects.html" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
+                                    <Link to="projects" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
                                        
                                         Version Control  <br />& Collaboration
 
                                         <Icon/>
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
 
@@ -133,12 +134,12 @@ function Service() {
 {/* 
                                   {/* Icon End --> */}
                                 <h4>
-                                    <a href="projects.html" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
+                                    <Link to="projects" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
                                         
                                         
                                         Project Deployment <br />& Optimization
                                         <Icon/>
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
 
@@ -156,10 +157,10 @@ function Service() {
 
                                 {/*   {/* Icon End --> */}
                                 <h4>
-                                    <a href="projects.html" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
+                                    <Link to="projects" class="flex flex-wrap items-end justify-between font-bold text-xl font-Syne text-black-800 group-hover:text-orange transition-all">
                                     Database Design <br />& Management
                                         <Icon/>
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
 
@@ -172,12 +173,12 @@ function Service() {
                     <div class="col-span-12 xl:col-span-4" data-aos="zoom-in" data-aos-delay="1000">
                         <div class="px-6 py-9 bg-black-800 rounded-lg flex flex-wrap flex-col justify-between max-w-[416px] mx-auto h-full group">
                             <div class="flex flex-wrap justify-end relative">
-                                <a href="contact.html" class="group-hover:animate-arrow-move-up">
+                                <Link to="contact" class="group-hover:animate-arrow-move-up">
                                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M23.3333 56.6666L56.6667 23.3333" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M23.3333 23.3333H56.6667V56.6666" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
 
                             <div class="flex flex-col flex-wrap gap-y-2">

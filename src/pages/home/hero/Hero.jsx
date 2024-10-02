@@ -4,6 +4,7 @@ import ContactGif from './mini-component/ContactGif';
 import Arrow from './mini-component/Arrow';
 import counterUp from 'counterup2';
 import Icons from './mini-component/Icons';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     const counterRef = useRef(null);
@@ -76,17 +77,17 @@ function Hero() {
 
                             <div className="flex flex-wrap mb-[50px] md:mb-[60px] xl:mb-[70px] 2xl:mb-[80px]">
                                 <span data-aos="fade-right" data-aos-delay="1000">
-                                    <a href="contact" className="flex items-center flex-wrap btn-primary mr-2 group">
+                                    <Link to="contact" className="flex items-center flex-wrap btn-primary mr-2 group">
                                         Let’s Talk
                                         <Arrow />
-                                    </a>
+                                    </Link>
                                 </span>
 
                                 <span data-aos="fade-right" data-aos-delay="1200">
-                                    <a href="projects" className="flex items-center flex-wrap btn-primary-outline group">
+                                    <Link to="projects" className="flex items-center flex-wrap btn-primary-outline group">
                                         My Work
                                         <Arrow />
-                                    </a>
+                                    </Link>
                                 </span>
                             </div>
 

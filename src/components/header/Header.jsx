@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header({ toggleOffCanvas }) { // Accept toggle function as prop
   return (
@@ -7,13 +8,13 @@ function Header({ toggleOffCanvas }) { // Accept toggle function as prop
         <div className="flex pl-4 xl:pl-0">
           <div className="flex-1 flex items-center justify-between border-b border-black-800 border-opacity-40">
             <div className='text-3xl font-bold'>
-            <a href="/">
+            <Link to="/">
              Chibuike
-            </a>
+            </Link>
             </div>
             
-            <a
-              href="contact"
+            <Link
+              to="contact"
               className="flex items-center flex-wrap py-[6px] px-3 text-[15px] font-bold text-active leading-none mr-2 transition-all duration-300 hover:text-orange md:hover:text-white group"
             >
               Let’s Talk
@@ -43,7 +44,7 @@ function Header({ toggleOffCanvas }) { // Accept toggle function as prop
                   />
                 </svg>
               </span>
-            </a>
+            </Link>
           </div>
 
           <div

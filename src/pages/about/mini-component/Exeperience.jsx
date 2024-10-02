@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Exeperience() {
   return (
@@ -15,26 +16,7 @@ function Exeperience() {
                             only reflects who you are and what you stand for, but words that truly land with those that
                             read them, calling your audience in and making them want more.
                         </p>
-                        {/* <ul class="flex flex-wrap gap-9 2xl:gap-[40px]">
-                            <li>
-
-                                <span
-                                    class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">08</span>
-                                <p class="paragraph">Award winner</p>
-                            </li>
-                            <li>
-
-                                <span
-                                    class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">1.2k</span>
-                                <p class="paragraph">Worldwide client</p>
-                            </li>
-                            <li>
-
-                                <span
-                                    class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">3.5k</span>
-                                <p class="paragraph">Job done successfully</p>
-                            </li>
-                        </ul> */}
+                     
                     </div>
 
                     <div class="flex flex-col justify-end">
@@ -53,13 +35,13 @@ function Exeperience() {
                                 </h4>
                             </div>
                             <div class="flex flex-wrap justify-end">
-                                <a href="#" class="group-hover:animate-arrow-move-up">
+                                <Link to="#" class="group-hover:animate-arrow-move-up">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14 34L34 14" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M14 14H34V34" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
 
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

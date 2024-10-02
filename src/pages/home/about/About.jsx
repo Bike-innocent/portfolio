@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function About() {
     return (
@@ -31,29 +32,10 @@ function About() {
                                 that not only
                                 reflects who you are and what you stand for, but words that truly land with those that read them,
                                 calling your audience in and making them .</p>
-                            {/* <ul class="flex flex-wrap gap-9 2xl:gap-[40px] mb-7">
-                                <li>
-
-                                    <span
-                                        class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">08</span>
-                                    <p class="paragraph">Award winner</p>
-                                </li>
-                                <li>
-
-                                    <span
-                                        class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">1.2k</span>
-                                    <p class="paragraph">Worldwide client</p>
-                                </li>
-                                <li>
-
-                                    <span
-                                        class="text-black-800 text-[32px] font-bold font-Syne leading-10 relative before:rounded-full before:bg-black-300 before:block before:absolute before:top-[0px] before:left-0 before:right-0 before:-z-[1] before:w-[43px] before:h-[43px]">3.5k</span>
-                                    <p class="paragraph">Job done successfully</p>
-                                </li>
-                            </ul> */}
+                           
 
                             <div class="flex flex-wrap">
-                                <a href="contact.html" class="flex items-center flex-wrap btn-primary group">Download my resume
+                                <Link onTouchStartCapture="contact" class="flex items-center flex-wrap btn-primary group">Download my resume
                                     <span class="inline-block ml-3 group-hover:animate-arrow-move-up">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2"
@@ -62,7 +44,7 @@ function About() {
                                                 stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

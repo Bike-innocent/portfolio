@@ -3,8 +3,10 @@ import axiosInstance from '../../../axiosInstance'; // Adjust the path if necess
 import Arrow1 from './mini-component/Arrow1';
 import VeiwAllProject from './mini-component/VeiwAllProject';
 import { useQuery } from '@tanstack/react-query'; // Import useQuery
-import SkeletonComponent from './mini-component/SkeletonComponent';
 import ProjectDropdown from './mini-component/ProjectDropdown';
+import { Link } from 'react-router-dom';
+import Loader from '../../../components/Loader';
+import InlineLoader from '../../../components/InlineLoader';
 
 // Function to fetch projects
 const fetchProjects = async () => {
@@ -45,11 +47,9 @@ function Portfolio() {
             {/* Show loading skeletons if data is being fetched */}
             {isLoading ? (
               <>
-                {[1, 2].map((_, index) => (
-                  <div className="col-span-12 md:col-span-6" key={index}>
-                    <SkeletonComponent />
-                  </div>
-                ))}
+              <div className="text-center">
+                {/* <InlineLoader/> */}
+                </div>
               </>
             ) : (
               // Show actual content when data is loaded
@@ -58,28 +58,33 @@ function Portfolio() {
                   className="col-span-12 md:col-span-6"
                   data-aos="fade-up"
                   data-aos-delay={`${300 + index * 200}`} // Adding a delay for each project
-                  key={project.id}
+                  key={project.slug}
                 >
+
+
+
                   <div className="w-full">
-                    <img
-                      src={project.image}
-                      alt={`project-${project.name}`}
-                      className="mb-6 rounded-[20px] object-cover w-full max-h-[280px] sm:max-h-[320px] md:max-h-[300px] lg:max-h-[350px]" />
+                    <Link to={`/project/${project.slug}`} >
+                      <img
+                        src={project.image}
+                        alt={`project-${project.name}`}
+                        className="mb-6 rounded-[20px] object-cover w-full max-h-[280px] sm:max-h-[320px] md:max-h-[300px] lg:max-h-[350px]" />
+                    </Link>
                   </div>
                   <div className="flex flex-wrap flex-col gap-3">
                     <div className="flex flex-wrap gap-2">
-                      <a
+                      <Link
                         className="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white"
-                        href={project.url}
+                        to={project.url}
                         target="_blank"
                         rel="noopener noreferrer">
                         VIEW LIVE
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="text-xs text-black-text-800 uppercase font-medium font-Inter leading-none py-[6px] px-4 rounded-[40px] border border-black-text-400 transition-all hover:bg-active hover:border-active hover:text-white"
-                        href={`/project/${project.slug}`}>
+                        to={`/project/${project.slug}`}>
                         DESCRIPTION
-                      </a>
+                      </Link>
 
                       <div className='ml-auto'>
                         <ProjectDropdown project={project} />
@@ -88,13 +93,13 @@ function Portfolio() {
                     </div>
                     <div className="flex flex-wrap items-center justify-between text-black-800 hover:text-orange group">
                       <h4 className="font-bold font-Syne text-center leading-10 text-[20px] lg:text-[24px] xl:text-[32px] capitalize">
-                        <a className="transition-all" href={`/project/${project.slug}`}>
+                        <Link className="transition-all" to={`/project/${project.slug}`}>
                           {project.name}
-                        </a>
+                        </Link>
                       </h4>
-                      <a className="group-hover:animate-arrow-move-up" href={`/project/${project.slug}`}>
+                      <Link className="group-hover:animate-arrow-move-up" to={`/project/${project.slug}`}>
                         <Arrow1 />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
