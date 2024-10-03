@@ -131,7 +131,7 @@ function ProjectDetails() {
                     <div className="grid grid-cols-1">
                         <h3 className="text-[25px] font-bold font-Syne leading-10 mb-2">Description</h3>
                      
-                        <div className="custom-quill-content " dangerouslySetInnerHTML={{ __html: project.description }} />
+                        <div className="custom-quill-content text-lg" dangerouslySetInnerHTML={{ __html: project.description }} />
                     </div>
                 </div>
             </section>

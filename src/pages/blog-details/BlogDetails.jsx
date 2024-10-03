@@ -3,8 +3,13 @@ import { useParams } from 'react-router-dom';
 import axiosInstance from '../../axiosInstance'; // Assuming you have an Axios instance set up
 import RelatedBlog from './mini-component/RelatedBlog';
 import MediaShare from './mini-component/MediaShare';
+import Loader from '../../components/Loader';
 
 function BlogDetails() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
+
     const { slug } = useParams(); // Get the slug from the URL
     const [blog, setBlog] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -26,7 +31,15 @@ function BlogDetails() {
         fetchBlogDetails();
     }, [slug]);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) {
+        return (
+            <section className="bg-secondary pt-[700px]">
+                <div className="max-w-[1075px] mx-auto px-4 xl:px-0">
+                    <Loader />
+                </div>
+            </section>
+        );
+    }
     if (error) return <p>{error}</p>;
 
     return (
@@ -35,18 +48,18 @@ function BlogDetails() {
             <section className="bg-secondary pt-[110px]">
                 <div className="max-w-[1075px] mx-auto px-4 xl:px-0" data-aos="flip-down" data-aos-delay="300">
                     <div className="grid grid-cols-1">
-                        <h4 className="text-black-800 font-bold font-Syne leading-snug text-[23px] sm:text-[32px] md:text-[44px] max-w-[950px] mb-12">
+                        <h4 className="text-black-800 font-bold font-Syne leading-snug text-[20px] sm:text-[25px] md:text-[28px] max-w-[950px] mb-4 md:mb-5">
                             {blog.title}
                         </h4>
-                        <img className="w-full rounded-[20px] max-h-[550px] object-cover mb-5" src={blog.image} alt={blog.title} />
+                        <img className="w-full rounded-[20px] max-h-[280px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] object-cover mb-5" src={blog.image} alt={blog.title} />
                     </div>
                 </div>
             </section>
             {/* Hero Section End */}
 
-            <section className="bg-white pb-[120px] mt-[-280px] pt-[280px]">
+            <section className="bg-white pb-[90px] mt-[-280px] pt-[280px]">
                 <div className="max-w-[1075px] mx-auto px-4 xl:px-0">
-                    <div className="grid grid-cols-1 mb-12">
+                    <div className="grid grid-cols-1  mb-5">
                         <ul className="flex flex-wrap gap-x-[80px] gap-y-6 pb-8 border-b border-black-800 border-opacity-10">
                             <li className="flex flex-wrap flex-col gap-3">
                                 <span className="text-black-text-800 text-sm font-normal font-Inter leading-tight">Category</span>
@@ -60,8 +73,8 @@ function BlogDetails() {
                     </div>
 
                     <div className="grid grid-cols-1">
-                        <h3 className="text-2xl font-bold font-Syne leading-10 mb-5">Description</h3>
-                        <div className="custom-quill-content mb-12 " dangerouslySetInnerHTML={{ __html: blog.description }} />
+                       
+                        <div className="custom-quill-content mb-5 text-lg" dangerouslySetInnerHTML={{ __html: blog.description }} />
                       
                     </div>
 
@@ -71,7 +84,7 @@ function BlogDetails() {
                 </div>
             </section>
 
-            <RelatedBlog />
+            <RelatedBlog/>
         </>
     );
 }

@@ -15,7 +15,7 @@ function RelatedProject() {
 
     // Use the useQuery hook with the slug as part of the queryKey
     const { data: projects = [], isLoading, error } = useQuery({
-        queryKey: ['related', slug],
+        queryKey: ['relatedp', slug],
         queryFn: () => fetchRelatedProjects(slug), // Pass the slug to the query function
     });
 

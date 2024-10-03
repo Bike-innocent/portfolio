@@ -3,7 +3,6 @@ import axiosInstance from '../../../axiosInstance'; // Adjust the path if necess
 import Arrow1 from './mini-component/Arrow1';
 import VeiwAllProject from './mini-component/VeiwAllProject';
 import { useQuery } from '@tanstack/react-query'; // Import useQuery
-import ProjectDropdown from './mini-component/ProjectDropdown';
 import { Link } from 'react-router-dom';
 // import Loader from '../../../components/Loader';
 // import InlineLoader from '../../../components/InlineLoader';
@@ -28,7 +27,7 @@ function Portfolio() {
 
   return (
     <>
-      <section className="bg-secondary py-[120px]">
+      <section className="bg-secondary py-[50px]">
         <div className="container">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12" data-aos="fade-up">
@@ -86,10 +85,7 @@ function Portfolio() {
                         DESCRIPTION
                       </Link>
 
-                      <div className='ml-auto'>
-                        <ProjectDropdown project={project} />
-                      </div>
-
+                    
                     </div>
                     <div className="flex flex-wrap items-center justify-between text-black-800 hover:text-orange group">
                       <h4 className="font-bold font-Syne text-center leading-10 text-[20px] lg:text-[24px] xl:text-[32px] capitalize">

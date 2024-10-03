@@ -28,7 +28,7 @@ function Blog() {
 
   return (
     <>
-      <section className="bg-white py-[120px]">
+      <section className="bg-white py-[50px]">
         <div className="container">
           <div className="grid grid-cols-12">
             <div className="col-span-12" data-aos="fade-up">
@@ -37,7 +37,7 @@ function Blog() {
                 <h3 className="text-black-800 text-4xl lg:text-5xl xl:text-[64px] tracking-[-1.5px]">
                   My blog
                   <span
-                    className="relative z-[1] before:rounded-full before:bg-primary before:block before:absolute before:top-[8px] before:left-[20px] before:-z-[1] before:w-[36px] lg:before:w-[48px] xl:before:w-[69px] before:h-[36px] lg:before:h-[48px] xl:before:h-[69px]">po</span>st
+                    className="relative z-[1] before:rounded-full  before:block before:absolute before:top-[8px] before:left-[20px] before:-z-[1] before:w-[36px] lg:before:w-[48px] xl:before:w-[69px] before:h-[36px] lg:before:h-[48px] xl:before:h-[69px]">po</span>st
                 </h3>
               </div>
             </div>
