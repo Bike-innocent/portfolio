@@ -42,7 +42,7 @@ function RelatedProject() {
                     </div>
 
                     {isLoading ? (
-                        <div>Loading related projects...</div>
+                        <div> </div>
                     ) : (
                         // Show actual content when data is loaded
                         projects.length > 0 ? (

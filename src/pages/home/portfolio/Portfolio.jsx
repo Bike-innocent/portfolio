@@ -20,10 +20,6 @@ function Portfolio() {
     queryFn: fetchProjects,
   });
 
-  if (error) {
-    console.error('Error fetching projects:', error);
-    return <div>Error loading projects.</div>; // Show error message if fetching fails
-  }
 
   return (
     <>
@@ -50,7 +46,11 @@ function Portfolio() {
                 {/* <InlineLoader/> */}
                 </div>
               </>
-            ) : (
+            ) : error ? (
+              <div className="text-center text-red-600 mb-12 col-span-12">
+                  Error loading projects. Please try again later.
+              </div>
+          ) : (
               // Show actual content when data is loaded
               projects.slice(0, 2).map((project, index) => (
                 <div

@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+
+
+import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../axiosInstance'; // Assuming axiosInstance is correctly set up
 import { Link } from 'react-router-dom';
 import BlogDropdown from './mini-component/BlogDropdown';
 import Loader from '../../components/Loader';
 import { useQuery } from '@tanstack/react-query'; 
-
-
 
 const fetchBlogs = async () => {
     const response = await axiosInstance.get('/blogs');
@@ -13,27 +13,26 @@ const fetchBlogs = async () => {
 };
 
 function Blog() {
+    const [retryCount, setRetryCount] = useState(0);
+
+    // Scroll to top when the component is mounted
     useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
+        window.scrollTo(0, 0);
     }, []);
-
-   
-
 
     const { data: blogs = [], isLoading, error } = useQuery({
         queryKey: ['blogsge'],
         queryFn: fetchBlogs,
+        retry: false // Disable automatic retries by react-query
     });
 
-    if (error) {
-        console.error('Error fetching blogs:', error);
-        return <div className='mb-12'>
-            Error loading blogs.
-            </div>; // Show error message if fetching fails
-    }
-
-
-  
+    
+    useEffect(() => {
+        if (error && retryCount < 1) {
+            setRetryCount(retryCount + 1);
+            fetchBlogs(); 
+        }
+    }, [error, retryCount]);
 
     return (
         <>
@@ -53,37 +52,35 @@ function Blog() {
                     </div>
 
                     {isLoading ? (
-                        <>
-                            <div className='mb-[350px]'>
-                                <Loader />
-                            </div>
-
-                        </>
+                        <div className='mb-[350px]'>
+                            <Loader />
+                        </div>
+                    ) : error ? (
+                        <div className="text-center text-red-600 mb-[300px]">
+                            Error loading blogs. Please try again later.
+                        </div>
                     ) : (
-
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                             {blogs.map((blog) => (
                                 <div key={blog.id} data-aos="fade-up">
-
                                     <div className="rounded-[20px] overflow-hidden mb-6">
                                         <Link to={`/blog/${blog.slug}`}>
-                                            <img className="w-full max-h-[280px] object-cover"  src={blog.image} alt={blog.title} />
+                                            <img className="w-full max-h-[280px] object-cover" src={blog.image} alt={blog.title} />
                                         </Link>
                                     </div>
                                     <div className="flex flex-wrap flex-col gap-3">
                                         <ul className="flex flex-wrap text-sm font-normal font-Inter leading-tight">
                                             <li className="relative z-[1] before:rounded-full before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[15px] before:-z-[1] before:w-[8px] before:h-[8px] pl-[30px]">
-                                                <a className="text-black-text-800" href="#">{blog.category}</a>
+                                                <Link className="text-black-text-800" to={`/blog/${blog.slug}`}>{blog.category}</Link>
                                             </li>
                                             <li className="relative z-[1] before:rounded-full before:bg-orange before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[15px] before:-z-[1] before:w-[8px] before:h-[8px] pl-[30px]">
-                                                <a className="text-orange" href="#">{new Date(blog.created_at).toLocaleDateString()}</a>
+                                                <Link className="text-orange" to={`/blog/${blog.slug}`}>{new Date(blog.created_at).toLocaleDateString()}</Link>
                                             </li>
                                         </ul>
                                         <div className="flex justify-between items-end text-black-800 hover:text-orange group">
                                             <h4 className="font-bold font-Syne transition-all leading-8 text-[18px] md:text-[20px] 2xl:text-[22px]">
-                                                <a href={`/blog/${blog.slug}`}>{blog.title}</a>
+                                                <Link to={`/blog/${blog.slug}`}>{blog.title}</Link>
                                             </h4>
-                                           
                                             <div className='ml-auto'>
                                                 <BlogDropdown blog={blog} />
                                             </div>

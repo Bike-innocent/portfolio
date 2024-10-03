@@ -73,7 +73,7 @@ function CreateBlog() {
 
   return (
     <section className="px-4 lg:px-16 bg-gray-100 py-[100px]">
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <div className="max-w-4xl mx-auto bg-white p-2 md:p-5 lg:p-8  rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-8 text-center">Create New Blog</h2>
 
         {error && <div className="text-red-500 mb-4">{error}</div>}
@@ -127,7 +127,7 @@ function CreateBlog() {
                   value={formData.description}
                   placeholder="Write your blog description here..."
                   onChange={handleEditorChange}
-                  className="overflow-x-auto block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 quill-editor"
+                  className="overflow-x-auto block w-full  border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 quill-editor"
                   modules={{
                     toolbar: [
                       ['bold', 'italic', 'underline'], // Bold, Italic, Underline

@@ -20,7 +20,7 @@ function RelatedBlog() {
     });
 
     if (isLoading) {
-        return <div>Loading related blogs...</div>; // Show a loading message if data is being fetched
+        return <div> </div>; // Show a loading message if data is being fetched
     }
 
     if (error) {
@@ -64,10 +64,10 @@ function RelatedBlog() {
                                     <div className="flex flex-wrap flex-col gap-3">
                                         <ul className="flex flex-wrap text-sm font-normal font-Inter leading-tight">
                                             <li className="relative z-[1] before:rounded-full before:bg-black-800 before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[15px] before:-z-[1] before:w-[8px] before:h-[8px] pl-[30px]">
-                                                <a className="text-black-text-800" href="#">{blog.category}</a>
+                                                <Link className="text-black-text-800" to={`/blog/${blog.slug}`}>{blog.category}</Link>
                                             </li>
                                             <li className="relative z-[1] before:rounded-full before:bg-orange before:block before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[15px] before:-z-[1] before:w-[8px] before:h-[8px] pl-[30px]">
-                                                <a className="text-orange" href="#">{new Date(blog.created_at).toLocaleDateString()}</a>
+                                                <Link className="text-orange" to={`/blog/${blog.slug}`}>{new Date(blog.created_at).toLocaleDateString()}</Link>
                                             </li>
                                         </ul>
                                         <div className="flex justify-between items-end text-black-800 hover:text-orange group">

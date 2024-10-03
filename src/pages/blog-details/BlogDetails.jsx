@@ -40,7 +40,19 @@ function BlogDetails() {
             </section>
         );
     }
-    if (error) return <p>{error}</p>;
+
+    if (error) {
+
+        return (
+            <section className="bg-secondary pt-[250px] pb-[350px] text-center text-red-500">
+                <div className="max-w-[1075px] mx-auto px-4 xl:px-0">
+               error  fecthing blog data
+                </div>
+            </section>
+        );
+       
+        
+    }
 
     return (
         <>

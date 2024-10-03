@@ -99,7 +99,7 @@ function OffCanvas({ isOpen, toggleOffCanvas }) {
                   <Arrow />
                 </Link>
               </li>
-              <AuthNav />
+              <AuthNav toggleOffCanvas={toggleOffCanvas}/>
             </ul>
           </nav>
         </div>

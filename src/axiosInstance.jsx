@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-   // baseURL: 'http://localhost:8000/api', // Use the correct base URL
+   //baseURL: 'http://localhost:8000/api', // Use the correct base URL
   baseURL: 'https://backend.buike.com.ng/api',
   withCredentials: true,
   headers: {
@@ -24,7 +24,7 @@ axiosInstance.interceptors.request.use(
       // Fetch CSRF token if it doesn't exist
       if (!xsrfTokenExists && !config.url.includes('/sanctum/csrf-cookie')) {
         console.log('Fetching CSRF token...');
-      //await axios.get('http://localhost:8000/sanctum/csrf-cookie', {
+     //await axios.get('http://localhost:8000/sanctum/csrf-cookie', {
      await axios.get('https://backend.buike.com.ng/sanctum/csrf-cookie', {
           withCredentials: true,
         });

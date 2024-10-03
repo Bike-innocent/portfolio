@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axiosInstance from '../../../axiosInstance';
 import Arrow from './Arrow';
 
-function AuthNav() {
+function AuthNav({toggleOffCanvas}) {
     const [isAdmin, setIsAdmin] = useState(false);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
@@ -71,7 +71,7 @@ function AuthNav() {
     };
 
     if (loading) {
-        return <div>Loading...</div>; // You can replace this with a proper loader
+        return <div className='text-white'>Loading...</div>; // You can replace this with a proper loader
     }
 
     return (
@@ -82,6 +82,7 @@ function AuthNav() {
                       
                         <Link
                             to="/create-project"
+                            onClick={toggleOffCanvas}
                         
                             className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
                         >
@@ -93,6 +94,7 @@ function AuthNav() {
                         
                         <Link
                             to="/create-blog"
+                            onClick={toggleOffCanvas}
                         
                             className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
                         >
@@ -103,6 +105,7 @@ function AuthNav() {
                     <li className="border-b border-border-white py-4 group">
                         <button
                             onClick={handleLogout}
+                            
                             className="text-white text-xl font-bold font-Syne leading-none flex flex-wrap items-center justify-between hover:text-orange transition duration-300"
                         >
                             Logout

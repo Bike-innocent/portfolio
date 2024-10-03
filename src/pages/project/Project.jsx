@@ -22,13 +22,7 @@ function Project() {
         queryFn: fetchProjects,
     });
 
-    if (error) {
-        console.error('Error fetching projects:', error);
-        return <div className='mb-12'>
-            Error loading projects.
-            </div>; // Show error message if fetching fails
-    }
-
+   
     return (
         <>
             <section className="bg-secondary py-[120px]">
@@ -55,8 +49,12 @@ function Project() {
                                 </div>
 
                             </>
+                        ) : error ? (
+                            <div className="text-center mx-auto text-red-600 mb-[300px] col-span-12">
+                                Error loading projects. Please try again later.
+                            </div>
                         ) : (
-                            // Show actual content when data is loaded
+                         
                             projects.map((project, index) => (
                                 <div
                                     className="col-span-12 md:col-span-6"

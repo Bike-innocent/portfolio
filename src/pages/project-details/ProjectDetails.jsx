@@ -43,7 +43,16 @@ function ProjectDetails() {
 
     // Handle errors
     if (error) {
-        return <div>Error: {error}</div>;
+
+        return (
+            <section className="bg-secondary pt-[250px] pb-[350px] text-center text-red-500">
+                <div className="max-w-[1075px] mx-auto px-4 xl:px-0">
+               error  fecthing project data
+                </div>
+            </section>
+        );
+       
+        
     }
 
     // Handle the case where no project data is found
