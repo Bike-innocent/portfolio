@@ -1,5 +1,5 @@
 import React from 'react'
-import Icons from './mini-component/Icons'
+import ContactForm from './mini-component/ContactForm'
 
 function Contact() {
     return (
@@ -14,7 +14,7 @@ function Contact() {
                                     <span
                                         class="relative z-[1] before:rounded-full  before:block before:absolute before:top-[4px] before:left-[-6px] before:-z-[1] before:w-[36px] lg:before:w-[48px] xl:before:w-[64px] before:h-[36px] lg:before:h-[48px] xl:before:h-[64px]">Le</span>t’s
                                     <br class="hidden lg:block" />
-                                    connect
+                                   {' '} connect
                                 </h3>
                             </div>
 
@@ -62,49 +62,8 @@ function Contact() {
                             </div>
                         </div>
                         <div class="col-span-12 lg:col-span-6" data-aos="fade-up" data-aos-delay="300">
-                            <form id="contact-form" action="https://www.hiveart.xyz/perez/mail.php" method="post" class="grid grid-cols-12 gap-[18px]">
-
-                                <div class="col-span-12 ">
-                                    <label class="text-sm font-normal font-Inter leading-tight mb-3 block" for="Email">Email</label>
-                                    <input id="Email" class="font-normal w-full leading-7 placeholder:opacity-100 placeholder:text-black-text-600 border border-black-800 border-opacity-40 rounded-[8px] p-4 focus:border-black-800 focus:border-opacity-40 focus:outline-none " type="email" required placeholder="Your email*" name="email" />
-                                </div>
-
-
-                                <div class="col-span-12">
-                                    <label class="text-sm font-normal font-Inter leading-tight mb-3 block" for="Message">Message</label>
-                                    <textarea class="h-[120px] font-normal w-full leading-7 placeholder:opacity-100 placeholder:text-black-text-600 border border-black-800 border-opacity-40 rounded-[8px] p-4 focus:border-black-800 focus:border-opacity-40 focus:outline-none resize-none" name="message" id="Message" cols="30" rows="10" required placeholder="Type your message"></textarea>
-                                </div>
-
-
-                                <div class="col-span-12">
-                                    <button class="flex items-center flex-wrap btn-primary group" type="submit">Submit
-                                        <span class="inline-block ml-3 group-hover:animate-arrow-move-up">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <p class="form-message mt-3"></p>
-                                </div>
-
-                                <div class="col-span-12">
-                                    <div class="justify-start sm:items-center gap-[23px] inline-flex mt-14 flex-col sm:flex-row">
-                                        <svg width="110" height="2" viewBox="0 0 110 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 1H110" stroke="#080808" stroke-opacity="0.1" />
-                                        </svg>
-
-                                        <div class="flex flex-wrap gap-[23px]">
-                                            <h4 class="text-black-800 text-xl font-bold font-Syne leading-7">Follow me</h4>
-
-                                            <Icons />
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
+                           
+                           <ContactForm/>
                         </div>
                     </div>
                 </div>
