@@ -32,7 +32,7 @@ function ContactForm() {
                     <label className="text-sm font-normal font-Inter leading-tight mb-3 block" htmlFor="Email">Email</label>
                     <input
                         id="Email"
-                        className="font-normal w-full leading-7 placeholder:opacity-100 placeholder:text-black-text-600 border border-black-800 border-opacity-40 rounded-[8px] p-4 focus:border-black-800 focus:border-opacity-40 focus:outline-none"
+                        className="font-normal w-full leading-7 placeholder:opacity-100 placeholder:text-black-text-600 border border-black-800 border-opacity-40 rounded-[8px] p-4  focus:border-orange focus:outline-none"
                         type="email"
                         required
                         placeholder="Your email*"
@@ -45,7 +45,7 @@ function ContactForm() {
                 <div className="col-span-12">
                     <label className="text-sm font-normal font-Inter leading-tight mb-3 block" htmlFor="Message">Message</label>
                     <textarea
-                        className="h-[120px] font-normal w-full leading-7 placeholder:opacity-100 placeholder:text-black-text-600 border border-black-800 border-opacity-40 rounded-[8px] p-4 focus:border-black-800 focus:border-opacity-40 focus:outline-none resize-none"
+                        className="h-[140px] font-normal w-full leading-7 placeholder:opacity-100 placeholder:text-black-text-600 border border-black-800 border-opacity-40 rounded-[8px] p-4  focus:border-orange focus:outline-none resize-none"
                         name="message"
                         id="Message"
                         cols="30"

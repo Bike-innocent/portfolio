@@ -1,7 +1,7 @@
 import React from 'react'
 import Icons from './mini-component/Icons'
 import { Link } from 'react-router-dom';
-
+import { FaWhatsapp, FaEnvelope, FaEnvelopeSquare } from 'react-icons/fa';
 
 
 function Footer() {
@@ -19,7 +19,7 @@ function Footer() {
                                     <span class="text-xl font-bold font-Syne text-white">Based in Ilorin |</span>
 
 
-                                    <Icons/>
+                                    <Icons />
 
 
                                 </div>
@@ -28,14 +28,16 @@ function Footer() {
                             <div class="py-9 px-7  border-gray-500 border rounded-2xl flex flex-col justify-between group">
                                 <h3 class="text-xl font-bold font-Syne text-white">Looking for a hectic designer?</h3>
                                 <div class="flex justify-between items-center">
-                                    <p class="text-2xl font-bold font-Syne leading-none text-orange ">hello@buike.com.ng</p>
-                                  <Link to="#" class="text-white group-hover:animate-arrow-move-up group-hover:text-orange">
-                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.6667 28.3334L28.3334 11.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M11.6667 11.6667H28.3334V28.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
 
-                                    </Link>
+                                    <p class="text-2xl font-bold font-Syne leading-none text-orange "> <a href="mailto:hello@buike.com.ng">hello@buike.com.ng </a></p>
+
+                                    <div className='text-white  group-hover:animate-arrow-move-up group-hover:text-orange'>
+                                        {/* Add the anchor tag around the icon */}
+                                        <a href="mailto:hello@buike.com.ng">
+                                            <FaEnvelope size={33} /> {/* Correct icon name */}
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -43,19 +45,23 @@ function Footer() {
                                 <h3 class="text-xl font-bold font-Syne text-white">Want a more in-depth look at my history?</h3>
                                 <div class="flex justify-between items-center">
                                     <p class="text-2xl font-bold font-Syne leading-none text-orange">+234 808 887 9523 </p>
-                                  <Link to="#" class="text-white group-hover:animate-arrow-move-up group-hover:text-orange">
-                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.6667 28.3334L28.3334 11.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M11.6667 11.6667H28.3334V28.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
 
-                                    </Link>
+                                    <div className='text-white group-hover:animate-arrow-move-up group-hover:text-orange'>
+                                        {/* Add the anchor tag around the icon */}
+                                        <a
+                                            href="https://wa.me/2348088879523" // WhatsApp link with the country code and phone number
+                                            target="_blank" // Open the link in a new tab
+                                            rel="noopener noreferrer" // For security reasons
+                                        >
+                                            <FaWhatsapp size={35} />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
 
-                       
+
 
                         <div class="grid grid-cols-1 gap-6">
                             <div class="py-[72px] text-center">
@@ -73,7 +79,7 @@ function Footer() {
                                 </div>
                                 <div class="col-span-12 sm:col-span-4 order-first sm:order-last">
                                     <div class="flex justify-end mb-2 sm:mb-0">
-                                      <Link id="scrollUp" class="flex flex-wrap items-center gap-2 group" href="#" aria-label="scroll up">
+                                        <Link id="scrollUp" class="flex flex-wrap items-center gap-2 group" href="#" aria-label="scroll up">
                                             <span
                                                 class="text-white text-lg font-normal font-sans leading-7 transition-all group-hover:text-orange">Back
                                                 to

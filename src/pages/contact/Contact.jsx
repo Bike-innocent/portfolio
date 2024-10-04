@@ -1,5 +1,7 @@
 import React from 'react'
 import ContactForm from './mini-component/ContactForm'
+import {  FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Contact() {
     return (
@@ -14,31 +16,36 @@ function Contact() {
                                     <span
                                         class="relative z-[1] before:rounded-full  before:block before:absolute before:top-[4px] before:left-[-6px] before:-z-[1] before:w-[36px] lg:before:w-[48px] xl:before:w-[64px] before:h-[36px] lg:before:h-[48px] xl:before:h-[64px]">Le</span>t’s
                                     <br class="hidden lg:block" />
-                                   {' '} connect
+                                    {' '} connect
                                 </h3>
                             </div>
 
 
                             <div class="flex flex-wrap flex-col gap-7">
                                 <div class="flex flex-wrap gap-4 pb-4 border-b border-gray-300 lg:max-w-[416px]">
-                                    <span>
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M5.33366 5.33325H26.667C28.1337 5.33325 29.3337 6.53325 29.3337 7.99992V23.9999C29.3337 25.4666 28.1337 26.6666 26.667 26.6666H5.33366C3.86699 26.6666 2.66699 25.4666 2.66699 23.9999V7.99992C2.66699 6.53325 3.86699 5.33325 5.33366 5.33325Z"
-                                                stroke="#080808" stroke-opacity="0.9" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M29.3337 8L16.0003 17.3333L2.66699 8" stroke="#080808"
-                                                stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
+                                    <a href="mailto:hello@buike.com.ng" >
+                                        <span>
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.33366 5.33325H26.667C28.1337 5.33325 29.3337 6.53325 29.3337 7.99992V23.9999C29.3337 25.4666 28.1337 26.6666 26.667 26.6666H5.33366C3.86699 26.6666 2.66699 25.4666 2.66699 23.9999V7.99992C2.66699 6.53325 3.86699 5.33325 5.33366 5.33325Z"
+                                                    stroke="#080808" stroke-opacity="0.9" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M29.3337 8L16.0003 17.3333L2.66699 8" stroke="#080808"
+                                                    stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
 
-                                    </span>
-                                    <div class="flex flex-wrap flex-col flex-1">
-                                        <span class="paragraph !leading-none">Email </span>
-                                        <h5 class="text-xl font-bold font-Syne text-black-800 leading-7">hello@buike.com.ng
-                                        </h5>
-                                    </div>
+                                        </span>
+                                    </a>
+                                    <a href="mailto:hello@buike.com.ng" >
+                                        <div class="flex flex-wrap flex-col flex-1">
+                                            <span class="paragraph !leading-none">Email </span>
+                                            <h5 class="text-xl font-bold font-Syne text-black-800 leading-7">hello@buike.com.ng
+                                            </h5>
+                                        </div>
+                                    </a>
+
                                 </div>
                                 <div class="flex flex-wrap gap-4 pb-4 border-b border-gray-300 lg:max-w-[416px]">
                                     <span>
@@ -52,18 +59,33 @@ function Contact() {
 
 
                                     </span>
-                                    <div class="flex flex-wrap flex-col flex-1">
-                                        <span class="paragraph !leading-none">Call </span>
-                                        <h5 class="text-xl font-bold font-Syne text-black-800 leading-7">+234 808 887 9523
-                                        </h5>
+                                    <div className="flex">
+                                        <div class="flex flex-wrap flex-col flex-1">
+                                            <span class="paragraph !leading-none">Call </span>
+                                            <h5 class="text-xl font-bold font-Syne text-black-800 leading-7">+234 808 887 9523
+                                            </h5>
+
+                                        </div>
+                                        <div className='ml-10 sm:ml-14 md:ml-18 text-green-600 p-2'>
+                                            {/* Add the anchor tag around the icon */}
+                                            <a
+                                                href="https://wa.me/2348088879523" // WhatsApp link with the country code and phone number
+                                                target="_blank" // Open the link in a new tab
+                                                rel="noopener noreferrer" // For security reasons
+                                            >
+                                                <FaWhatsapp size={35} />
+                                            </a>
+                                        </div>
+
                                     </div>
+
                                 </div>
 
                             </div>
                         </div>
                         <div class="col-span-12 lg:col-span-6" data-aos="fade-up" data-aos-delay="300">
-                           
-                           <ContactForm/>
+
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
