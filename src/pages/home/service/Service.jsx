@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon from './mini-component/Icon'
+import ContactCard from './mini-component/ContactCard'
 import { Link } from 'react-router-dom'
 
 
@@ -7,7 +8,7 @@ function Service() {
   return (
     <>
           {/* Service start --> */}
-          <section class="py-[120px]">
+          <section class="py-[80px]">
             <div class="container">
                 <div class="grid grid-cols-12 gap-6 2xl:gap-0 mb-12 items-center" data-aos="fade-up">
                     <div class="col-span-12 lg:col-span-6 xl:col-span-6">
@@ -169,25 +170,9 @@ function Service() {
                         </div>
                     </div>
 
+                     <ContactCard/>
+              
 
-                    <div class="col-span-12 xl:col-span-4" data-aos="zoom-in" data-aos-delay="1000">
-                        <div class="px-6 py-9 bg-black-800 rounded-lg flex flex-wrap flex-col justify-between max-w-[416px] mx-auto h-full group">
-                            <div class="flex flex-wrap justify-end relative">
-                                <Link to="contact" class="group-hover:animate-arrow-move-up">
-                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M23.3333 56.6666L56.6667 23.3333" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.3333 23.3333H56.6667V56.6666" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </Link>
-                            </div>
-
-                            <div class="flex flex-col flex-wrap gap-y-2">
-                                <span class="text-orange text-lg font-normal leading-none">SAY HELLO!</span>
-                                <h4 class="text-white text-2xl xl:text-[32px] font-bold font-Syne leading-none">hello@buike.com.ng
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 

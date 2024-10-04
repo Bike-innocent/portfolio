@@ -7,22 +7,32 @@ import RelatedProject from './mini-component/RelatedProject';
 import Loader from '../../components/Loader';
 
 function ProjectDetails() {
+
     useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
+        window.scrollTo(0, 0); 
     }, []);
+
+    
 
     const { slug } = useParams(); // Extract the project slug from the URL
     const [project, setProject] = useState(null); // State to store project data
     const [loading, setLoading] = useState(true); // Loading state
     const [error, setError] = useState(null); // Error state
 
+   
+
+    
+
     useEffect(() => {
-        // Fetch the project details using the slug
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         axiosInstance
             .get(`/projects/${slug}`)
             .then((response) => {
                 setProject(response.data); // Store the project data
                 setLoading(false); // Set loading to false
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+
             })
             .catch((error) => {
                 setError(error.response?.data?.message || 'Error fetching project data');
@@ -47,7 +57,7 @@ function ProjectDetails() {
         return (
             <section className="bg-secondary pt-[250px] pb-[350px] text-center text-red-500">
                 <div className="max-w-[1075px] mx-auto px-4 xl:px-0">
-               error  fecthing project data
+               error  fecthing project data. try refreshing 
                 </div>
             </section>
         );

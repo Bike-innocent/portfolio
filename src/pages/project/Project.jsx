@@ -51,7 +51,7 @@ function Project() {
                             </>
                         ) : error ? (
                             <div className="text-center mx-auto text-red-600 mb-[300px] col-span-12">
-                                Error loading projects. Please try again later.
+                                Error loading projects. try refreshing.
                             </div>
                         ) : (
                          
