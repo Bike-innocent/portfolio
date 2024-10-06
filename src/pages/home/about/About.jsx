@@ -11,7 +11,7 @@ function About() {
                         <div class="relative">
 
 
-                            <img src="assets/images/about/about1.png" alt="" />
+                            <img src="assets/images/about/about5.png" alt="" />
 
                             <div class="flex flex-wrap flex-col absolute bottom-0 right-0 md:right-[170px] lg:right-[-30px] z-10">
                                 <span

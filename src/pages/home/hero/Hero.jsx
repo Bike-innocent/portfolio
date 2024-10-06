@@ -120,7 +120,7 @@ function Hero() {
                     <img
                         className="absolute top-0 right-0 md:max-w-[420px] lg:max-w-[570px] xl:max-w-[650px] 2xl:max-w-[initial]"
                         data-aos="fade-left"
-                        src="assets/images/hero/hero.png"
+                        src="assets/images/hero/chi.png"
                         alt="hero Image"
                     />
                     <ContactGif />
