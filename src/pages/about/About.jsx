@@ -10,7 +10,7 @@ function About() {
         <>
             <Hero />
             <Exeperience />
-            <Video/>
+            {/* <Video/> */}
             <Tab/>
            {/* <Testimonial/> */}
           

@@ -10,8 +10,10 @@ function About() {
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-[60px] xl:gap-[134px]">
                         <div class="relative">
 
-
-                            <img src="assets/images/about/about5.png" alt="" />
+                        <div>
+                         <img src="assets/images/about/about5.png" className='mx-auto sm:max-w-[450px] md:max-w-[500px] lg:max-w-[500px] xl:max-w-[600px]' alt="about me" />
+                    </div>
+                          
 
                             <div class="flex flex-wrap flex-col absolute bottom-0 right-0 md:right-[170px] lg:right-[-30px] z-10">
                                 <span

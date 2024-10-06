@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Exeperience() {
   return (
     <>
-       <section class="bg-white py-[120px] overflow-x-hidden">
+       <section class="bg-white py-[50px] overflow-x-hidden">
             <div class="container" data-aos="zoom-out">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[60px] xl:gap-[134px]">
                     <div class="font-bold font-Syne leading-none flex flex-wrap flex-col gap-y-2">

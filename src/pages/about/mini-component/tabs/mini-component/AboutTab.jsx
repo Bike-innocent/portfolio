@@ -5,7 +5,10 @@ function AboutTab() {
         <>
            
                 <div className="grid grid-cols-1">
-                <img src="assets/images/about/about5.png" alt="about me" />
+                    <div>
+                         <img src="assets/images/about/about5.png" className='mx-auto sm:max-w-[450px] md:max-w-[500px] lg:max-w-[500px] xl:max-w-[600px]' alt="about me" />
+                    </div>
+               
                     <h4 className="text-black-800 text-2xl lg:text-[32px] font-bold font-Syne mb-6">Based in Ilorin</h4>
                     <p className="paragraph mb-7">Mark Henry, <span className="text-black-800">Web Developer</span>,
                         based
