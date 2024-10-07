@@ -228,11 +228,11 @@ function EditProject() {
                 className="overflow-x-auto block w-full  border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 quill-editor"
                 modules={{
                   toolbar: [
-                    ['bold', 'italic', 'underline'], // Bold, Italic, Underline
+                    ['bold', 'italic', 'underline','image','video'], 
                     ['link'], // Link
                   ],
                 }}
-                formats={['bold', 'italic', 'underline', 'link']}
+                formats={['bold', 'italic', 'underline', 'link','image','video']}
               />
               </div>
              

@@ -103,7 +103,7 @@ function Portfolio() {
             )}
           </div>
 
-          <VeiwAllProject />
+          {/* <VeiwAllProject /> */}
         </div>
       </section>
     </>

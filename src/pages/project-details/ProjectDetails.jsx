@@ -150,7 +150,7 @@ function ProjectDetails() {
             <section className="bg-white pb-[120px] mt-[-130px] pt-[130px] md:mt-[-280px] md:pt-[280px]">
                 <div className="max-w-[1075px] mx-auto px-4 xl:px-0">
                     <div className="grid grid-cols-1">
-                        <h3 className="text-[25px] font-bold font-Syne leading-10 mb-2">Description</h3>
+                        {/* <h3 className="text-[25px] font-bold font-Syne leading-10 mb-2">Description</h3> */}
                      
                         <div className="custom-quill-content text-lg" dangerouslySetInnerHTML={{ __html: project.description }} />
                     </div>
@@ -158,7 +158,7 @@ function ProjectDetails() {
             </section>
 
             {/* Related Projects */}
-            <RelatedProject />
+            {/* <RelatedProject /> */}
         </>
     );
 }
