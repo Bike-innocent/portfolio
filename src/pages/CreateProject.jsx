@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import axiosInstance from '../axiosInstance';
 import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill'; // Import React Quill
@@ -24,6 +24,13 @@ function CreateProject() {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const authToken = localStorage.getItem('authToken');
+    if (!authToken) {
+      navigate('/'); // Redirect to home if token is not found
+    }
+  }, [navigate]);
 
   // Handle input change for text fields
   const handleChange = (e) => {

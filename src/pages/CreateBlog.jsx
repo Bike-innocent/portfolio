@@ -1,4 +1,82 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+// import axiosInstance from '../axiosInstance';
+// import { useNavigate } from 'react-router-dom';
+// import ReactQuill from 'react-quill'; // Import React Quill for text editor
+// import 'react-quill/dist/quill.snow.css'; // Import Quill's styling
+
+// function CreateBlog() {
+//   const navigate = useNavigate();
+
+//   // Form state
+//   const [formData, setFormData] = useState({
+//     title: '',
+//     description: '', // Description will be handled by ReactQuill
+//     image: null, // For file upload
+//     category: ''
+//   });
+
+//   const [loading, setLoading] = useState(false);
+//   const [error, setError] = useState(null);
+
+//   // Handle input change for text fields
+//   const handleChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value
+//     });
+//   };
+
+//   // Handle description change with React Quill
+//   const handleEditorChange = (value) => {
+//     setFormData({
+//       ...formData,
+//       description: value
+//     });
+//   };
+
+//   // Handle file change for image input
+//   const handleFileChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       image: e.target.files[0]
+//     });
+//   };
+
+//   // Handle form submission
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     setLoading(true);
+//     setError(null);
+
+//     try {
+//       const formDataToSend = new FormData();
+//       Object.keys(formData).forEach((key) => {
+//         formDataToSend.append(key, formData[key]);
+//       });
+
+//       // Post request to create the blog
+//       await axiosInstance.post('/blogs', formDataToSend, {
+//         headers: {
+//           'Content-Type': 'multipart/form-data'
+//         }
+//       });
+
+//       // Redirect to the blogs list after successful submission
+//       navigate('/blogs');
+//     } catch (err) {
+//       console.error('Error creating blog:', err);
+//       setError('Failed to create the blog. Please try again.');
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+
+
+
+
+
+import React, { useState, useEffect } from 'react';
 import axiosInstance from '../axiosInstance';
 import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill'; // Import React Quill for text editor
@@ -17,6 +95,14 @@ function CreateBlog() {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  // Check for authToken in local storage on component mount
+  useEffect(() => {
+    const authToken = localStorage.getItem('authToken');
+    if (!authToken) {
+      navigate('/'); // Redirect to home if token is not found
+    }
+  }, [navigate]);
 
   // Handle input change for text fields
   const handleChange = (e) => {

@@ -72,7 +72,7 @@ function Hero() {
                                 data-aos="fade-right"
                                 data-aos-delay="800"
                             >
-                                Fulstack Website Developer | Based in Ilorin
+                                Fulstack Website Developer.
                             </p>
 
                             <div className="flex flex-wrap mb-[50px] md:mb-[60px] xl:mb-[70px] 2xl:mb-[80px]">
@@ -118,7 +118,7 @@ function Hero() {
 
                 <div className="hidden md:block">
                     <img
-                        className="absolute top-0 right-0 md:max-w-[420px] lg:max-w-[570px] xl:max-w-[650px] 2xl:max-w-[initial]"
+                        className="absolute top-0 right-0 md:max-w-[420px] lg:max-w-[570px] xl:max-w-[650px] 2xl:max-w-[700px] 3xl:max-w-[750px] "
                         data-aos="fade-left"
                         src="assets/images/hero/chi.png"
                         alt="hero Image"

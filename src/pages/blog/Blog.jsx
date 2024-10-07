@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import BlogDropdown from './mini-component/BlogDropdown';
 import Loader from '../../components/Loader';
 import { useQuery } from '@tanstack/react-query'; 
+import Title from '../../components/Title';
 
 const fetchBlogs = async () => {
     const response = await axiosInstance.get('/blogs');
@@ -36,7 +37,9 @@ function Blog() {
 
     return (
         <>
+         <Title title="My Blogs" />
             <section className="bg-white py-[120px]">
+
                 <div className="container">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12" data-aos="fade-up">

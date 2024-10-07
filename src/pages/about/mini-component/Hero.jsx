@@ -10,32 +10,22 @@ function Hero() {
 
 
                             <img class="  mx-auto" src="assets/images/about/about7.png" alt="about me" />
-                            </div>
+                        </div>
                         <div class="font-bold font-Syne leading-none flex flex-wrap flex-col gap-y-2">
-                            <span class="text-orange text-xl">About me</span>
+                            <span class="text-orange text-xl">About Me</span>
                             <h3 class="text-black-800 text-4xl lg:text-5xl xl:text-[64px] tracking-[-1.5px]">
                                 Chibuike Innocent
                             </h3>
 
-                            <h4 class="text-black-800 text-2xl mt-3 mb-4">Web Developer</h4>
-                            <p class="text-xl font-bold font-Syne'] leading-7 mb-6">
-                                A Product Designer & Developer and I am in the game for over 7+ years. I am proud of my
-                                works and ready to face the next challenge
+                            <h4 class="text-black-800 text-2xl mt-3 mb-4">Full-Stack Web Developer</h4>
+                            <p class="text-xl font-bold font-Syne leading-7 mb-6">
+                                With over 3+ years of experience in web development, I specialize in creating dynamic and responsive websites. I am passionate about delivering high-quality digital solutions that meet the needs of modern businesses.
                             </p>
                             <p class="paragraph mb-6">
-                                That is where I come
-                                in.
-                                A lover of
-                                words, a wrangler of copy. Here to create copy that not
-                                only reflects who you are and what you stand for, but words that truly land with those that
-                                read them, calling your audience in and making them .</p>
-
-                            <div>
-                                <img src="assets/images/signature.svg" alt="signature" />
-                            </div>
-
-
+                                I take pride in my work and am always excited to tackle new challenges. My goal is to provide innovative, functional websites that not only meet but exceed client expectations, ensuring a seamless and engaging user experience every time.
+                            </p>
                         </div>
+
                     </div>
                 </div>
             </section>

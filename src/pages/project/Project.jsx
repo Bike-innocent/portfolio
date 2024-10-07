@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query'; // Import useQuery
 import ProjectDropdown from './mini-component/ProjectDropdown';
 import { Link } from 'react-router-dom';
 import Loader from '../../components/Loader';
+import Title from '../../components/Title';
 
 // Function to fetch projects
 const fetchProjects = async () => {
@@ -25,6 +26,7 @@ function Project() {
    
     return (
         <>
+          <Title title="My Projects" />
             <section className="bg-secondary py-[120px]">
                 <div className="container">
                     <div className="grid grid-cols-12 gap-6">

@@ -1,4 +1,5 @@
 import React from 'react';
+import {  FaEnvelope} from 'react-icons/fa';
 
 const ContactCard = () => {
     return (
@@ -8,23 +9,8 @@ const ContactCard = () => {
             <a href="mailto:hello@buike.com.ng">
                 <div className="px-6 py-9 bg-black-800 rounded-lg flex flex-wrap flex-col justify-between max-w-[416px] mx-auto h-full group">
                     <div className="flex flex-wrap justify-end relative">
-                        <a href="mailto:hello@buike.com.ng" className="group-hover:animate-arrow-move-up">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M23.3333 56.6666L56.6667 23.3333"
-                                    stroke="#3B82F6"
-                                    strokeWidth="3.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                                <path
-                                    d="M23.3333 23.3333H56.6667V56.6666"
-                                    stroke="#3B82F6"
-                                    strokeWidth="3.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
+                        <a href="mailto:hello@buike.com.ng" className="text-orange group-hover:animate-arrow-move-up">
+                        <FaEnvelope size={33} />
                         </a>
                     </div>
 

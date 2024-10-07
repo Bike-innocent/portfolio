@@ -10,10 +10,10 @@ function About() {
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-[60px] xl:gap-[134px]">
                         <div class="relative">
 
-                        <div>
-                         <img src="assets/images/about/about5.png" className='mx-auto sm:max-w-[450px] md:max-w-[500px] lg:max-w-[500px] xl:max-w-[600px]' alt="about me" />
-                    </div>
-                          
+                            <div>
+                                <img src="assets/images/about/about5.png" className='mx-auto sm:max-w-[450px] md:max-w-[500px] lg:max-w-[500px] xl:max-w-[600px]' alt="about me" />
+                            </div>
+
 
                             <div class="flex flex-wrap flex-col absolute bottom-0 right-0 md:right-[170px] lg:right-[-30px] z-10">
                                 <span
@@ -29,15 +29,14 @@ function About() {
                             </h3>
 
                             <h4 class="text-black-800 text-2xl lg:text-3xl xl:text-[44px] mt-3 mb-4">Based in Ilorin</h4>
-                            <p class="paragraph mb-6">That is where I come in. A lover of words, a wrangler of copy. Here to create
-                                copy
-                                that not only
-                                reflects who you are and what you stand for, but words that truly land with those that read them,
-                                calling your audience in and making them .</p>
-                           
+                            <p class="paragraph mb-6">
+                                I’m passionate about building websites that not only showcase your brand but also connect with your audience. My goal is to create tailored digital experiences that engage users and drive meaningful results, helping your business stand out.
+                            </p>
+
+
 
                             <div class="flex flex-wrap">
-                                <Link onTouchStartCapture="contact" class="flex items-center flex-wrap btn-primary group">Download my resume
+                                <Link  class="flex items-center flex-wrap btn-primary group">Download my resume
                                     <span class="inline-block ml-3 group-hover:animate-arrow-move-up">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2"

@@ -5,6 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import axiosInstance from '../../axiosInstance'; // Import your axios instance
 import RelatedProject from './mini-component/RelatedProject';
 import Loader from '../../components/Loader';
+import Title from '../../components/Title';
 
 function ProjectDetails() {
 
@@ -72,6 +73,7 @@ function ProjectDetails() {
 
     return (
         <>
+        <Title title={project.name}  />
             {/* Hero Section Start */}
             <section className="bg-secondary pt-[110px]">
                 <div className="max-w-[1075px] mx-auto px-4 xl:px-0" data-aos="flip-down" data-aos-delay="300">
