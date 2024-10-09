@@ -17,7 +17,7 @@ const ResumeContent = () => {
                             <span class="text-orange text-xl">Resume</span>
                             <h3 class="text-black-800 text-4xl lg:text-5xl xl:text-[64px] tracking-[-1.5px]">
                                 Chibuike Innocent
-                            </h3>
+                            </h3> &3tsS85ynE9R
 
                             <h4 class="text-black-800 text-2xl mt-3 mb-4">Full-Stack Web Developer</h4>
                             <p class="text-xl font-bold font-Syne leading-7 mb-6">
