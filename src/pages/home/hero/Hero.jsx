@@ -58,7 +58,7 @@ function Hero() {
                                 data-aos="fade-right"
                                 data-aos-delay="400"
                             >
-                                Chibuike
+                                Chibuike 
                             </h1>
                             <h2
                                 className="font-Syne text-black-800 font-bold text-[60px] sm:text-[80px] lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-[64px] lg:leading-[80px] xl:leading-[90px] 2xl:leading-[110px] mb-[20px]"
