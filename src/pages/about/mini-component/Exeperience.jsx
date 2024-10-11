@@ -33,14 +33,14 @@ function Exeperience() {
 
                             <div class="px-6 py-6 bg-black-800 rounded-lg flex flex-wrap justify-between items-end group">
                                 <div class="flex flex-col flex-wrap gap-y-2">
-                                    <Link to="mailto:hello@buike.com.ng">
+                                    <Link to="mailto:hello@chibuikeinnocent.tech">
                                         <span class="text-orange text-lg font-normal leading-none">SAY HELLO!</span>
-                                        <h4 class="text-white text-2xl xl:text-[32px] font-bold font-Syne leading-none">
-                                            hello@buike.com.ng
+                                        <h4 class="text-white text-xl sm:text-xl lg:text-2xl xl:text-[32px] font-bold font-Syne leading-none">
+                                            hello@chibuikeinnocent.tech
                                         </h4></Link>
                                 </div>
                                 <div class="flex flex-wrap justify-end">
-                                    <Link to="mailto:hello@buike.com.ng" class="group-hover:animate-arrow-move-up text-orange">
+                                    <Link to="mailto:hello@chibuikeinnocent.tech" class="group-hover:animate-arrow-move-up text-orange">
                                         <FaEnvelope size={33} />
                                     </Link>
                                 </div>

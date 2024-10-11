@@ -28,13 +28,16 @@ function Footer() {
 
                             <div class="py-9 px-7  border-gray-500 border rounded-2xl flex flex-col justify-between group">
                                 <h3 class="text-xl font-bold font-Syne text-white">Need a reliable developer?</h3>
-                                <div class="flex justify-between items-center">
+                                <div class="flex flex-wrap justify-between items-center">
 
-                                    <p class="text-2xl font-bold font-Syne leading-none text-orange "> <a href="mailto:hello@buike.com.ng">hello@buike.com.ng </a></p>
+                                    <p class="text-lg sm:text-xl  font-bold font-Syne leading-none text-orange ">
+                                         <a href="mailto:hello@chibuikeinnocent.tech">
+                                        hello@chibuikeinnocent.tech
+                                         </a></p>
 
                                     <div className='text-white  group-hover:animate-arrow-move-up group-hover:text-orange'>
                                         {/* Add the anchor tag around the icon */}
-                                        <a href="mailto:hello@buike.com.ng">
+                                        <a href="mailto:hello@chibuikeinnocent.tech">
                                             <FaEnvelope size={33} /> {/* Correct icon name */}
                                         </a>
                                     </div>
@@ -45,7 +48,7 @@ function Footer() {
                             <div class="py-9 px-7  border-gray-500 border rounded-2xl flex flex-col justify-between group">
                                 <h3 class="text-xl font-bold font-Syne text-white">Want to learn more about my work?</h3>
                                 <div class="flex justify-between items-center">
-                                    <p class="text-2xl font-bold font-Syne leading-none text-orange">+234 808 887 9523 </p>
+                                    <p class="text-lg sm:text-xl font-bold font-Syne leading-none text-orange">+234 808 887 9523 </p>
 
                                     <div className='text-white group-hover:animate-arrow-move-up group-hover:text-orange'>
                                       

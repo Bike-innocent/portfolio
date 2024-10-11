@@ -36,7 +36,7 @@ function About() {
 
 
 
-                        <Resume/>
+                        {/* <Resume/> */}
                         </div>
                     </div>
                 </div>

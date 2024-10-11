@@ -136,6 +136,7 @@ function EditBlog() {
             </div>
 
             {/* Description (React Quill Editor) */}
+            {/* 6hXY(P~8Z4Bk */}
             <div className="col-span-1 md:col-span-2">
               <label className="block mb-2 text-sm font-medium text-gray-700">Description</label>
               <div className="quill-container focus-within:border-gray-600 focus-within:shadow-outline">

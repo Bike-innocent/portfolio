@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
    //baseURL: 'http://localhost:8000/api', // Use the correct base URL
-  baseURL: 'https://backend.buike.com.ng/api',
+  baseURL: 'https://backend.chibuikeinnocent.tech/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ axiosInstance.interceptors.request.use(
       if (!xsrfTokenExists && !config.url.includes('/sanctum/csrf-cookie')) {
         console.log('Fetching CSRF token...');
      //await axios.get('http://localhost:8000/sanctum/csrf-cookie', {
-     await axios.get('https://backend.buike.com.ng/sanctum/csrf-cookie', {
+     await axios.get('https://backend.chibuikeinnocent.tech/sanctum/csrf-cookie', {
           withCredentials: true,
         });
       }

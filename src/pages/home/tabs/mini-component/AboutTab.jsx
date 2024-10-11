@@ -37,9 +37,9 @@ function AboutTab() {
                     <li className="gap-10 inline-flex items-center">
                       
                             <span className="w-[110px] text-black-text-800 text-lg font-normal leading-none">
-                                 <a href="mailto:hello@buike.com.ng" > Email</a></span>
-                            <span className="text-black-800  text-xl md:text-2xl font-bold font-Syne leading-8">
-                            <a href="mailto:hello@buike.com.ng" >hello@buike.com.ng</a></span>
+                                 <a href="mailto:hello@chibuikeinnocent.tech" > Email</a></span>
+                            <span className="text-black-800  text-lg sm:text-xl md:text-2xl font-bold font-Syne leading-8">
+                            <a href="mailto:hello@chibuikeinnocent.tech" >hello@chibuikeinnocent.tech</a></span>
                         
                     </li>
                     <li className="gap-10 inline-flex items-center">

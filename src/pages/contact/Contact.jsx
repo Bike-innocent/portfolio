@@ -39,7 +39,7 @@ function Contact() {
                             <div className="flex flex-wrap flex-col gap-7">
                                 {/* Email Contact */}
                                 <div className="flex flex-wrap gap-4 pb-4 border-b border-gray-300 lg:max-w-[416px]">
-                                    <a href="mailto:hello@buike.com.ng">
+                                    <a href="mailto:hello@chibuikeinnocent.tech">
                                         <span>
                                             {/* Email Icon */}
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -54,10 +54,10 @@ function Contact() {
                                             </svg>
                                         </span>
                                     </a>
-                                    <a href="mailto:hello@buike.com.ng">
+                                    <a href="mailto:hello@chibuikeinnocent.tech">
                                         <div className="flex flex-wrap flex-col flex-1">
                                             <span className="paragraph !leading-none">Email</span>
-                                            <h5 className="text-xl font-bold font-Syne text-black-800 leading-7">hello@buike.com.ng</h5>
+                                            <h5 className="text-xl font-bold font-Syne text-black-800 leading-7">hello@chibuikeinnocent.tech</h5>
                                         </div>
                                     </a>
                                 </div>
